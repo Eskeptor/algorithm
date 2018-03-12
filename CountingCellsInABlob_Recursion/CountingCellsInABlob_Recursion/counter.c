@@ -37,6 +37,7 @@ void countingCellsInABlob(const int _x, const int _y)
 {
 	findCell(_x, _y);
 	printf("(%d, %d)로 시작되는 블랍의 셀 개수: %d\n", _x, _y, count);
+
 }
 
 void printCell()
