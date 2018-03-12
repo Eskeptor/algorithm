@@ -20,5 +20,6 @@ int main(void)
 	int arr[] = { 1, 5, 6, 8, 12, 16, 22, 30, 35 };
 	const int VALUE = 12;
 	printf("%dÀÇ À§Ä¡: %d\n", VALUE, search(arr, 0, sizeof(arr) / sizeof(int), VALUE));
+
 	return 0;
 }
