@@ -7,7 +7,7 @@
 void maxHeapify(int _arr[], const int _idx, const int _length)
 {
 	int idx = _idx;
-	while (idx > 1 && idx < _length)
+	while (idx < _length)
 	{
 		if (_arr[idx] > _arr[idx / 2])
 		{
