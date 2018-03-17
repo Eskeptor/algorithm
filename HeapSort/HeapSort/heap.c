@@ -50,11 +50,24 @@ void printArr(const int _arr[], const int _length)
 	}
 }
 
+void buildMaxHeap(int _arr[], const int _length)
+{
+	for (int i = (_length - 1) / 2; i > 0; i--)
+	{
+		maxHeapify(_arr, i, _length);
+	}
+}
+
 void heapSort(int _arr[], const int _length)
 {
-	for (int i = _length - 1; i > 0; i--)
+	int length = _length;
+	buildMaxHeap(_arr, length);
+
+	for (int i = 0; i < _length - 1; i++)
 	{
-		if (i * 2 <= _length - 1)
-			maxHeapify(_arr, i, _length);
+		int tmp = _arr[1];
+		_arr[1] = _arr[length - 1];
+		_arr[length - 1] = tmp;
+		buildMaxHeap(_arr, --length);
 	}
 }
