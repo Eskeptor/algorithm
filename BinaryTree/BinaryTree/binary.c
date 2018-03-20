@@ -101,7 +101,7 @@ int deleteNode(const int _data)
 	Node* childLeft = search->left;
 	if (childLeft != NULL && childRight != NULL)
 	{
-
+		// TODO 수정필요
 	}
 	else if (childLeft != NULL || childRight != NULL)
 	{
